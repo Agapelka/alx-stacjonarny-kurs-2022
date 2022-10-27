@@ -1,3 +1,4 @@
 
 kurs jest ok.
-kolejna linijka: kurs jest ok
+kolejna linijka: kurs jest oobie
+Robie zmianę w pliku, żeby zacommitować
