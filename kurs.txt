@@ -1,0 +1,3 @@
+
+kurs jest ok.
+kolejna linijka: kurs jest ok
