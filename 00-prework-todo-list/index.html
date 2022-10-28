@@ -1,1 +1,79 @@
-<h1> Hello World </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<script src = "./index.js"></script>
+
+<!--
+  1. Stworz formularz z inputem o nazwie task-title i buttonem Add Todo.
+  2. Stworz pusta liste z 0 elementami
+  3. Po wcisnieciu buttona, dodaj do listy zadanie (tresc zadania pobierz z inputa)
+  4.* Na dole strony stworz button "Remove todos", ktory po wcisnieciu usuwa wszystie todo z listy
+  5.** Umozliwic zapisywanie  i odczytywanie listy z localStorage -->
+
+
+<script>
+    console.log('Hello World!');
+
+
+    // 1. Policz sumę cen produktów
+
+    const productPrices = [9.99, 4.78, 5.89];
+    let wynik = 0; 
+    console.log(productPrices);
+
+    for (let x of productPrices){
+        wynik += x;
+
+    }
+    console.log("wynik " + wynik);
+
+
+
+
+    // 2. Policz sume produktow
+    let suma = 0;
+    const products = [
+      {
+        name: 'Chleb',
+        price: 4.99
+      },
+      {
+        name: "Pomidory",
+        price: 9.99
+      },
+      {
+        name: "Olowek",
+        price: 1.20
+      }
+    ]
+
+    for (let obj of products){
+       console.log(obj);
+       suma += obj.price;
+    }
+    console.log("suma " + suma);
+
+</script>
+<h1>To do list</h1>
+<form id = "addToDoForm">
+
+    <label for ="add">Task-title</label><br>
+    <input type = "text" id = "addToDoInput" name = "tasks"><br><br>
+    <button type = "submit">Add ToDo</button>
+    <ol id="list">
+    
+    </ol>
+
+</form>
+  
+
+</body>
+</html>
