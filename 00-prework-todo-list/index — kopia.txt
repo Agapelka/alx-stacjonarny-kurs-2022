@@ -1,0 +1,20 @@
+
+
+    //odczytanie wartości z pola input
+    
+    const addToDoForm = document.querySelector('#addToDoForm');
+    const list = document.querySelector('#list');
+    const addToDoInput = document.querySelector('#addToDoInput');
+
+    
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const inputValue = addToDoInput.value;
+        list.innerHTML += '<li> ${inputValue} </li>'
+    }
+    
+    addToDoForm.addEventListener("submit", handleSubmit);
+
+
+

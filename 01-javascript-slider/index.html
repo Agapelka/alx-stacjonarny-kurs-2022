@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "css/styles.css">   
+</head>
+<body>
+    <div class = "slider">
+        <h1 class = "slider__title">Javascript Slider</h1>        
+        <div class="slider__button-container">
+            <button id="sliderPrev" class="slider__button">Prev</button>
+            <button id="sliderNext" class="slider__button">Next</button>
+        </div>
+        <ul class="slider__slide-list">
+            <!-- BEM - Block Element Modificator -->
+            <!-- To podwójny podkreślnik w pisaniu klas - jest on modyfikatorem. Stosujemy go między elementem nadrzędnym a podrzędnym.
+            Oznacza, że chcemy sobie zrobić wariant tego elementu -->
+
+            <li id="img_item"><img id="img_source" src="" alt="" class="slider__photo" ></li> 
+        </ul>
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
