@@ -100,45 +100,34 @@ const books = [
   const bookList = document.querySelector('#bookList');
   const searchBookInput = document.querySelector('#searchBookInput');
 
-
-books.forEach((book)=> {
+// funkcja do wyświetlenia listy
+const listDisplay = (listToDisplay) => {
+  bookList.innerHTML =''
+  listToDisplay.forEach((book)=> {
     bookList.innerHTML+=`
     <li>
         ${book.title},<br> 
         ${book.author},<br> 
-        ${book.website}
+        <a href="${book.website}">${book.website}</a>
     </li><br>
     `
-});    
+  });    
+}
 
+listDisplay(books);   // to tutaj ma być aby pokazać listę początkową
 
 
 const handleSubmit = (event) => {
     event.preventDefault();
-    const inputValue = searchBookInput.value; //pobieranie wartości z inputa
-    const findTitle = books.filter(book => {
+    const inputValue = searchBookInput.value; // pobieranie wartości z inputa
+    const findTitle = books.filter(book => { // filtrowanie listy ksiązek po tytułach wg. wartości z inputa
         return book.title.includes(`${inputValue}`);
+    });
+    
+    // teraz trzeba wyświetlić znalezioną listę książek !
+    listDisplay(findTitle);
 
-    bookList.innerHTML += `
-    <li> ${inputValue} </li>
-  `
-  }
-
-// filtruje książki po tytule zawierającym string "Script"
-// const findTitle = books.filter(book => {
-//     return book.title.includes(`${inputValue}`);
-// });
-console.log(findTitle);
-
-
-
+}
 
 searchBookForm.addEventListener('submit',handleSubmit);
-
-
-    
-
-
-
-
 
