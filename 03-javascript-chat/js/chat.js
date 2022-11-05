@@ -11,15 +11,13 @@
 
 // 5. Nad oknem chatu, zrob header z searchem (input + przycisk search). Po wcisnieciu przycisku, przefiltruj wiadomosci. Filtruj tylko po message.
 // 6. Ostyluj zadanie zeby przypominalo realny chat :)
-// 7. Odczytywanie i zapisywanie do localStorage stworz jako osobne funkcje, zapisz je w osobnych plikach i zaimportuj do glownego pliku chat.js
+// 7. Odczytywanie i zapisywanie do localStorage stworz jako osobne funkcje, 
+// zapisz je w osobnych plikach i zaimportuj do glownego pliku chat.js hmmm...
 
+import { save } from './save_to_local.js';
+import { read } from './read_from_local.js';
 
-let messages = [
-    // {
-    //     author: "",
-    //     message: ""
-    // }
-]
+let messages = []
 
 class SingleMessage {
     constructor(author, message){
@@ -27,16 +25,16 @@ class SingleMessage {
         this.message = message;
     }
 }   
-     //alternatywa:
-    //const author = inputValue;
-    //const message = messageValue
-    //messages.push({author, message})
 
 const chatForm = document.querySelector('#chatForm');
 const nameInput = document.querySelector('#nameInput');
 const messageInput = document.querySelector('#messageInput');
 const messagesList = document.querySelector('#messagesList');
+const searchInput = document.querySelector('#searchInput');
+const searching = document.querySelector('#searching')
+const reset = document.querySelector('#reset')
 
+// Wyświetlanie listy wiadomości
 const messagesDisplay = (messagesToDisplay) => {
     messagesList.innerHTML = ''
     messagesToDisplay.forEach((message) => {
@@ -53,11 +51,6 @@ const messagesDisplay = (messagesToDisplay) => {
 const handleSubmit = (event) => {
     event.preventDefault();
 
-    //pobrać wartość z inputa Author
-    //pobrać wartość z inputa Message
-    //Nowy obiekt ma powstać z tych dwóch wartości (author, message)
-    //Pushować obiekt do tablicy messages
-
     const inputValue = nameInput.value;
     const messageValue = messageInput.value;
 
@@ -65,26 +58,29 @@ const handleSubmit = (event) => {
     messages.push(newMessage);
 
     messagesDisplay(messages)
-    
+
     nameInput.value = ''
     messageInput.value =''
 
-    localStorage.setItem('messages', JSON.stringify(messages));
+    save(messages);
+}
 
+// Filtrowanie wiadomości
+const handleSearch = (event) => {
+    event.preventDefault();
+    const searchInputValue = searchInput.value;
+    const findMessage = messages.filter((message) => {
+        return message.message.includes(`${searchInputValue}`);
+    });
+    messagesDisplay(findMessage);
 }
 
 chatForm.addEventListener('submit',handleSubmit);
+searching.addEventListener('click',handleSearch);
+reset.addEventListener('click',messagesDisplay(messages));
 
-let messages_str = localStorage.getItem('messages')
-messages = JSON.parse(messages_str)
-if(messages === null) {
-    messages = [];
-}
-
+messages = read();
 messagesDisplay(messages)
-
-// alternatywa
-// messages = JSON.parse(localStorage.getItem('messages'))
 
 
 
