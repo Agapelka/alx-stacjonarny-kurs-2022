@@ -5,37 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap" rel="stylesheet">
+
+    
+    </head>
 <body>
-    <h1>Hello Chat</h1>
-    <div>
-        <form action="" id="searchForm">
-            <input type="text" id="searchInput">
-            <button id="searching">Search</button>
-            <button id="reset">Reset</button></br></br></br>
-        </form>
-    </div>
+    <header>
+        <h1>Hello<span>Chat!</span></h1>
+        <div>
+            <form action="" id="searchForm">
+                <input type="text" id="searchInput" placeholder="Search phrase">
+                <button id="searching">Search</button>
+                <button id="reset">Reset</button></br></br></br>
+            </form>
+        </div>
+    </header>
 
-    <div>
-        <form action="" id="chatForm">
+    <div class="chat">
+        <div class="chatInputsWrapper">
+            <form action="" id="chatForm">
+                <div class="chatinput">
+                    <label for="name">Author</label>
+                    <input type="text" id="nameInput" name="name" placeholder="Type your name..."></br>
+                </div>
+                <div class="chatinput">
+                    <label for="message">Message</label>
+                    <textarea id="messageInput" name="message" placeholder="Start typing..."></textarea></br>
+                    <button class="sub" type="submit">Send</button>
+                </div>
+                
 
-            <label for="name">Author</label></br>
-            <input type="text" id="nameInput" name="name"></br></br>
+            </form>
+        </div>
 
-            <label for="message">Message</label></br>
-            <textarea id="messageInput" name="message"></textarea></br></br>
+        <div class="messagesWrapper">
+            <ul id="messagesList">
+                <li>
 
-            <button type="submit">Send</button>
-
-        </form>
-    </div>
-
-    <div>
-        <ul id="messagesList">
-            <li>
-
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 
     <script src="js/chat.js" type="module"></script>

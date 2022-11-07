@@ -40,7 +40,7 @@ const messagesDisplay = (messagesToDisplay) => {
     messagesToDisplay.forEach((message) => {
         messagesList.innerHTML +=`
         <li>
-            ${message.author}<br>
+            <b>${message.author}<br></b>
              ${message.message}
          </li></br>
         `

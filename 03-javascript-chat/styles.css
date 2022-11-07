@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: white;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+h1 span {
+    color: rgb(186, 155, 221);
+}
+
+#searchForm {  
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 0.8em;
+    width: 620px;
+    height: 60px;
+    text-align: center;
+    background-color:rgb(186, 155, 221);
+  
+}
+
+label {
+    text-align: left;
+    padding-left: 18px;
+}
+
+.chat {
+    /* display: flex; */
+    margin: auto;
+    width: 640px;
+    padding-top: 40px;
+}
+
+.chatinput, .messagesWrapper {
+    margin-left: auto;
+    padding-left: 30px;
+    /* background-color: aquamarine; */
+    padding-bottom: 1.4em;
+    width: 320px;
+    font-size: 0.8em;
+}
+
+#nameInput, #messageInput, .sub {
+    width: 260px;
+    padding: 12px 18px;
+    margin-top: 6px;    
+    border: 1px solid aquamarine;
+    border-radius: 25px;
+    border-color: aquamarine;  
+}
+
+#messageInput {
+    height: 100px ;
+}
+.sub {
+    border: none;
+    background-color: aquamarine;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+#searchInput, #searching, #reset {
+    padding: 6px 18px;
+    margin-top: 6px;    
+    border: 1px solid rgb(186, 155, 221);
+    border-radius: 25px;
+    /* border-color: grey */
+}
+
+#searching, #reset {
+    width:100px;
+    background-color:aquamarine;
+
+}
+
+input::placeholder, textarea::placeholder {
+ font-family: 'Poppins', sans-serif;
+ font-size: 0.8em; 
+}
+
+
+#messagesList {
+    padding-top: 22px;
+    list-style: none;
+}
+
+.chatInputsWrapper {
+    position:fixed;
+    
+}
+
