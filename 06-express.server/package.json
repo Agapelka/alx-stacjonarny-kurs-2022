@@ -1,0 +1,25 @@
+{
+  "name": "06-express-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ROGAL12321/alx-stacjonarny-js-apps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ROGAL12321/alx-stacjonarny-js-apps/issues"
+  },
+  "homepage": "https://github.com/ROGAL12321/alx-stacjonarny-js-apps#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}

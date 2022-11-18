@@ -1,0 +1,154 @@
+{
+    "messages": [
+      {
+        "message": "Kurs jest fajny",
+        "author": "Damian"
+      },
+      {
+        "author": "Damian",
+        "message": "Jest fajnie"
+      },
+      {
+        "author": "Pawel",
+        "message": "Jestem na kursie ALX"
+      },
+      {
+        "author": "Paweł",
+        "message": "Jestem na kursie ALX 2"
+      },
+      {
+        "author": "damian",
+        "message": "umiem w LS"
+      },
+      {
+        "id": "1",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "123",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian",
+        "id": "xPez2sS"
+      },
+      {
+        "id": "a870db2a-2566-4b9d-8e95-85a3685832b9",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "ee0c97b6-9077-4db7-aba3-311f8a803b31",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "ed45062b-eb22-46c2-a1e7-331a1cfbeeb1",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "f891db05-4b51-4c03-bf29-b26bd46956cd",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "a158a84b-0ee8-42a1-bc05-23933c54a5ee",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "a3b94e91-b6ab-4448-aeae-382fa059aa8a",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "f722be0e-bcf6-4afa-b59b-5172edc40f8a",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "1f56a270-01a5-429f-9f02-1c2a972e1dc0",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "eec86f71-2aab-4510-bd3a-2208547e779c",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "70e7b1bc-2537-40a9-9a29-266aa3c1e82b",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "f4f44a05-2c28-4251-af6b-6093b5e4af8e",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "878675fc-9a2e-436a-85f5-d7f79a4d78b2",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "8cfcc98b-e540-4aca-a407-0fddb33e3736",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "dc092387-5a9e-4a2d-bfac-956ef2761ecc",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "79e85645-9bb1-4e9e-8963-a5395ab07ac8",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "a6ae4c3b-73b8-43d2-89c8-e50a0f5156fe",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "05843463-6eff-4a0a-b695-ce9f81df0e45",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "8ecd2fd7-a443-40f6-9ea9-a0b707772d7f",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "b1cb83f0-33bf-4d71-9003-74603bd7c95d",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "8115d8ef-c1b8-4415-ac31-54596ffe9905",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "31bf325c-d819-441c-87bf-d4286d935816",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "ec422b34-9de0-4077-a9f0-62caaa0a70d0",
+        "message": "Tresc wyslana do serwera",
+        "author": "Damian"
+      },
+      {
+        "id": "d6991269-0b59-496d-8e49-c5a380b27183",
+        "author": "Aga",
+        "message": "Nowy post"
+      }
+    ]
+  }
