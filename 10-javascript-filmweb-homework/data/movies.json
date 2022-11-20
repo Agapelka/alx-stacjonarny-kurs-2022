@@ -1,6 +1,7 @@
 {
     "movies": [
-      {
+      { 
+        "id": "1",
         "title": "The Game of Thrones",
         "category": "drama, fantasy",
         "description": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
@@ -8,7 +9,8 @@
         "year": 2011,
         "rate": 9.2
       },
-      {
+      { 
+        "id": 2,
         "title": "Harry Potter and the Philosopher’s stone",
         "category": "fantasy, adventure",
         "description": "An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.",
@@ -16,7 +18,8 @@
         "year": 2001,
         "rate": 7.6
       },
-      {
+      { 
+        "id": 3,
         "title": "The Lord of the rings. The Fellowship of the Ring",
         "category": "fantasy, adventure",
         "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
@@ -24,7 +27,8 @@
         "year": 2001,
         "rate": 8.8
       },
-      {
+      { 
+        "id": 4,
         "title": "James Bond. No time to die",
         "category": "action, adventure",
         "description": "James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
@@ -32,7 +36,8 @@
         "year": 2021,
         "rate": 7.3
       },
-      {
+      { 
+        "id": 5,
         "title": "Pulp Fiction",
         "category": "crime, drama",
         "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
@@ -40,7 +45,8 @@
         "year": 1994,
         "rate": 8.9
       },
-      {
+      { 
+        "id": 6,
         "title": "The Godfather",
         "category": "crime, drama",
         "description": "The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.",
@@ -48,7 +54,8 @@
         "year": 1972,
         "rate": 9.2
       },
-      {
+      { 
+        "id": 7,
         "title": "Back to the future",
         "category": "sci-fi, adventure",
         "description": "Marty McFly, a 17-year-old high school student, is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown.",
@@ -56,7 +63,8 @@
         "year": 1985,
         "rate": 8.5
       },
-      {
+      { 
+        "id": 8,
         "title": "Star Wars: Episode VI - Return of the Jedi",
         "category": "sci-fi, adventure",
         "description": "After a daring mission to rescue Han Solo from Jabba the Hutt, the Rebels dispatch to Endor to destroy the second Death Star. Meanwhile, Luke struggles to help Darth Vader back from the dark side without falling into the Emperor's trap.",
