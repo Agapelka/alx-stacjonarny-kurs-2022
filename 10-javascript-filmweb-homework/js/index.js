@@ -26,7 +26,7 @@ const renderMovies = (moviesToRender) => {
     moviesToRender.forEach((movie) => {
         moviesList.innerHTML += 
         `<li>
-            <h3><b><a href="../singlefilm.html" class="goto" data-elementId="${movie.id}">${movie.title}</a></b></h3>
+            <h3><b><a href="singlefilm.html" class="goto" data-elementId="${movie.id}">${movie.title}</a></b></h3>
             ${movie.category}<br><br>
             <img src="${movie.poster}">
         </li>`
@@ -54,7 +54,7 @@ const handleListClick = (event) => {
         console.log(event.target);
     
         localStorage.setItem('elementToGoId', idToGoto)
-        window.location.href = '../singlefilm.html'
+        window.location.href = 'singlefilm.html'
     }
 }
 moviesList.addEventListener('click', handleListClick)
