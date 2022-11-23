@@ -19,12 +19,17 @@ const App = () => {
   // useEffect jest to funkcja, ktora sluzy do konfigurowania stanu naszych komponentow, przez np. pobieranie danych z LS lub z bazy danych
 
   useEffect(() => {
-    const todosFromLS = localStorage.getItem('todos');
+    // const todosFromLS = localStorage.getItem('todos');
 
-    if(todosFromLS) {
-      setTodos(JSON.parse(todosFromLS))
-    }
-
+    // if(todosFromLS) {
+    //   setTodos(JSON.parse(todosFromLS))
+    // }
+    fetch('http://localhost:5000/todos')
+      .then(res => res.json())
+      .then(data => {
+        // po otrzymaniu danych z BE potrzebuje uzyc funkcji do zmieniania stanu odpowiedzialnego za tablice wyswietlana
+        setTodos(data);
+      })
   }, []);
 
   // [] oznacza, ze ta funkcja odpali sie tylko raz, od razu po pierwszym zaladowaniu komponentu
@@ -44,6 +49,16 @@ const App = () => {
 
     setTodos([]);
     localStorage.removeItem('todos');
+  }
+
+  const postTodo = (todoToSend) => {
+    fetch('http://localhost:5000/todos', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(todoToSend)
+    })
   }
 
   // Tak samo jak w zwyklym JS, funkcja ktora jest odpalana przez dane zdarzenie, moze otrzymac informacje o evencie pod nazwa event
@@ -76,7 +91,10 @@ const App = () => {
 
     // modyfikujemy tablice, zawierajaca wyswietlane todosy :)
     setTodos(newTodos);
-    localStorage.setItem('todos', JSON.stringify(newTodos));
+    // localStorage.setItem('todos', JSON.stringify(newTodos));
+
+    // postTodo jest to funkcja odpowiedzialna za wyslanie nowego TODO na serwer
+    postTodo(newTodo)
 
     // Czyszczenie inputa
     // Potrzebuje zmienic wartosc stanu inputa, na pusty string
@@ -98,7 +116,14 @@ const App = () => {
     })
 
     setTodos(filteredTodos);
-    localStorage.setItem('todos', JSON.stringify(filteredTodos));
+    // localStorage.setItem('todos', JSON.stringify(filteredTodos));
+    removeTodo(idToRemove);
+  }
+
+  const removeTodo = (idToRemove) => {
+    fetch(`http://localhost:5000/todos/${idToRemove}`, {
+      method: 'DELETE'
+    })
   }
 
   // 2. State (Stan komponentu)

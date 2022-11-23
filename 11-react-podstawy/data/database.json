@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": "a9a3575a-d95d-4a77-9a37-8a98e12e7032",
+      "message": "New task"
+    },
+    {
+      "id": "f493bc7d-0737-4f29-8029-52c37895354c",
+      "message": "new task"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1cf9dc8f-894a-4f87-a487-5fb981fe6929",
+      "author": "Agnieszka",
+      "message": "bvvhmghm"
+    }
+  ]
+}

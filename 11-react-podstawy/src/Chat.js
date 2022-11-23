@@ -12,12 +12,17 @@ const Chat = () => {
     
     
     useEffect(() => {
-        const messagesFromLs = localStorage.getItem('messages');
+        // const messagesFromLs = localStorage.getItem('messages');
 
-        if(messagesFromLs) {
-            setMessages(JSON.parse(messagesFromLs))
-        }  
-        // console.log(messagesFromLs)
+        // if(messagesFromLs) {
+        //     setMessages(JSON.parse(messagesFromLs))
+        // }  
+        // // console.log(messagesFromLs)
+        fetch('http://localhost:5000/messages')
+        .then(res => res.json())
+        .then(data => {
+            setMessages(data);
+        })
     }, []);
   
 
@@ -62,7 +67,16 @@ const Chat = () => {
 
         //podmiana listy w stanie
         setMessages(newListMessages);
-        localStorage.setItem('messages', JSON.stringify(newListMessages));
+        // localStorage.setItem('messages', JSON.stringify(newListMessages));
+
+        const postMessage = (messageToSend) => {
+            fetch('http://localhost:5000/messages', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'
+            },
+            body:JSON.stringify(messageToSend)
+            })
+         }
 
         // czyszczenie inputów
         setInputAuthorValue('')
@@ -71,6 +85,8 @@ const Chat = () => {
 
         // Czyszczenie błędów walidacyjnych
         setMessageError(false)
+
+        postMessage(newMessage)
 
     }
 
@@ -89,7 +105,14 @@ const Chat = () => {
         })
 
         setMessages(filteredMessages);
-        localStorage.setItem('messages', JSON.stringify(filteredMessages));
+        // localStorage.setItem('messages', JSON.stringify(filteredMessages));
+        removeMessage(idToRemove)
+    }
+
+    const removeMessage = (idToRemove) => {
+        fetch(`http://localhost:5000/messages/${idToRemove}`, {
+            method: 'DELETE'
+        })
     }
 
 
