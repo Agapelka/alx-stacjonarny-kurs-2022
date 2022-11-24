@@ -8,6 +8,7 @@ const Chat = () => {
     
     const [inputMessageValue, setInputMessageValue] = useState('')
     const [isMessageError, setMessageError] = useState()
+    
     const [messages, setMessages] = useState([])
     
     

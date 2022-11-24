@@ -1,12 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/index.css';
-import ChatPage from './components/pages/ChatPage/ChatPage';
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+
+import 'styles/index.css';
+import ChatPage from 'components/pages/ChatPage/ChatPage';
+import About from 'components/pages/About/About';
+import EditPage from 'components/pages/EditPage/EditPage';
+
+// To jest obiekt konfiguracyjny routingu, ktory mowi nam na ktorej sciezce, ma odpalic ktory komponent
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <ChatPage />
+  },
+  {
+    path: '/about',
+    element: <About />
+  },
+  {
+    path: '/edit/:messageId',
+    element: <EditPage />
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// RouterProvider jest to komponent stworzony przez react-router-dom, ktory przyjmuje jako props router, nasz obiekt konfiguracyjny
 root.render(
   <React.StrictMode>
-    <ChatPage />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
