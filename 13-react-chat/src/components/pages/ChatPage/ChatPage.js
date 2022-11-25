@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
-
+import { useState, useEffect, useContext } from 'react';
+import { GlobalContext } from 'contexts/global';
 import MainTemplate from 'components/templates/MainTemplate/MainTemplate';
 import ChatForm from 'components/sections/ChatForm/ChatForm';
 import ChatMessages from 'components/sections/ChatMessages/ChatMessages';
 import { fetchMessages, postMessage } from 'utils/http';
+
 
 
 function ChatPage() {
@@ -15,6 +16,11 @@ function ChatPage() {
     
     const [messageInputValue, setMessageInput] = useState('');
     // const [isMessageError, setMessageError]= useState('');
+
+    // Wszystko to, co zostało wysłane w atrybucie w Context.Provider, jest możliwe do odebrania przy użyciu hooku UseContext
+    const globalState = useContext(GlobalContext);
+    // Odczytywanie wartości z ChatPage
+    console.log(globalState)
 
     const [messages, setMessages] = useState([]);
 

@@ -5,7 +5,7 @@ import Input from "components/atoms/Input/Input";
 function ChatForm(props) {
 
     
-        const renderSwitch = (authorErrorCode) => {
+        const renderAuthorErrorCode = (authorErrorCode) => {
             switch(authorErrorCode) {
                 case 1:
                     return 'Pole Author nie może być puste';
@@ -33,7 +33,7 @@ function ChatForm(props) {
 
             {
                 props.authorErrorCode
-                ? <p>{renderSwitch(props.authorErrorCode)}</p>
+                ? <p>{renderAuthorErrorCode(props.authorErrorCode)}</p>
                 : null
             }
 

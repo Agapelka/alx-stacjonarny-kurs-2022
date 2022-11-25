@@ -20,3 +20,16 @@ https://nestjs.com/
 https://firebase.google.com/
 
 https://epicreact.dev/
+
+https://www.codewars.com/
+
+https://egghead.io/
+
+
+Kontynuacja:
+// CSS Modules - lokalne pliki CSS
+// Env variables - jak bezpiecznie trzymac dane dostepowe do aplikacji
+// Wlasne hooki
+// Pisanie aplikacji :slightly_smiling_face:
+
+https://www.linkedin.com/in/damian-rogulski/

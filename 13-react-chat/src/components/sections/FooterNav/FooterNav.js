@@ -1,7 +1,14 @@
+
+import { useContext } from "react";
+import { GlobalContext } from "contexts/global";
+import Button from "components/atoms/Button/Button";
 import { Link } from "react-router-dom";
+import './FooterNav.css';
+
 function FooterNav() {
+  const { state, handleThemeChange } = useContext(GlobalContext);
     return (
-        <nav>
+      <nav className={state.theme==='dark' ? 'dark-theme-footer' : ''}>
         <ul>
           <li>
             {/* Jeśli chcemy zmienić zawartość strony bez odświeżenia jej całkowicie, potrzebujemy użyć wbudowanego komponentu Link */}
@@ -10,8 +17,10 @@ function FooterNav() {
           <li>
             <Link to="/about">About</Link>
           </li>
-        </ul>
+        </ul>   
+        <Button text="Zmień theme" onClick={handleThemeChange}></Button>
       </nav>
+   
 
     )
 }
