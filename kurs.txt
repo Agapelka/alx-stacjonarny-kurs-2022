@@ -1,4 +1,35 @@
 
-kurs jest ok.
-kolejna linijka: kurs jest oobie
-Robie zmianę w pliku, żeby zacommitować
+https://github.com/ROGAL12321/alx-stacjonarny-js-apps
+
+https://learngitbranching.js.org/
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+
+https://www.youtube.com/watch?v=H6RMv-23A5Y&list=PLbxRbShUdF8UybMp_6csiQDgq9xhiMz0u
+
+http://www.flexboxdefense.com/
+
+https://flexboxfroggy.com/
+
+https://www.youtube.com/watch?v=srvUrASNj0s&t=11880s
+
+https://jsbin.com/ruvucuqego/3/edit?js
+
+https://nestjs.com/
+
+https://firebase.google.com/
+
+https://epicreact.dev/
+
+https://www.codewars.com/
+
+https://egghead.io/
+
+
+Kontynuacja:
+// CSS Modules - lokalne pliki CSS
+// Env variables - jak bezpiecznie trzymac dane dostepowe do aplikacji
+// Wlasne hooki
+// Pisanie aplikacji :slightly_smiling_face:
+
+https://www.linkedin.com/in/damian-rogulski/
